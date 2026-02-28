@@ -28,7 +28,7 @@ body {
     box-shadow: -10px 0px 0px blue;
 }
 
-#cft {
+.cft {
         font-family: 'long-shot', sans-serif;
         font-size: 40px;
         color: rgb(199, 0, 0);
