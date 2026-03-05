@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.defaultStyle {
+    display: flex;
+    justify-content: center;
+    
+        > .common {
+        background-color: blue;
+        color: white;
+        font-size: medium;
+        font-weight: 550;
+        padding: 1%;
+        border-radius: 5px;
+}
+}

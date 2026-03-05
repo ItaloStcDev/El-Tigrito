@@ -1,14 +1,30 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 @font-face {
-    font-family: 'long-shot';
-    src: url('font/Long_Shot.ttf') format('truetype');
+    font-family: "long-shot";
+    src: url("font/Long_Shot.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    border: 1px, solid, rgba(0, 0, 0, 0.36);
+    border-radius: 3px;
+    padding: 3px;
+}
+
+button {
+    background-color: blue;
+    border-radius: 7px;
+    border-color: transparent;
+    padding: 7px;
+
+    color: white;
+    font-weight: 550;
 }
 
 .divClass1 {
@@ -29,7 +45,7 @@ body {
 }
 
 .cft {
-        font-family: 'long-shot', sans-serif;
-        font-size: 40px;
-        color: rgb(199, 0, 0);
-    }
+    font-family: 'long-shot', sans-serif;
+    font-size: 40px;
+    color: rgb(199, 0, 0);
+}

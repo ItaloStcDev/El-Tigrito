@@ -4,21 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>apostas</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="common.css">
+
     <link rel="shortcut icon" href="img/favicon.jpeg" type="image/x-icon">
 </head>
 <body>
-    <h1 style="text-align: center;"><del>Perca seu dinheiro</del> Fique rico!!</h1>
-
+    <header>
+        <div id="money" class="common">10</div>
+        <h1><del>Perca seu dinheiro</del> <br>Fique rico!!</h1>
+        <div id="divName" class="common">Perifl</div>
+    </header>
+    
     <div class="divClass1">
         <div id="divApostando" style="text-align: center;">
             <p>Sua aposta:</p>
+
             <p>Valor: R$ <input id="apostarInput" type="number" min="1" step="0.01" placeholder="Valor minimo de R$1,00"></p>
+
             <button id="apostarBtn">Apostar</button>
             <div id="divRes"></div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="profile.js"></script>
 </body>
 </html>
