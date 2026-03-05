@@ -9,17 +9,17 @@ const divRes = document.querySelector('#divRes');
 
 function strt () {
     return divMoney.innerText = 'Saldo: T$ ' + userProfile.money.toFixed(2);
-}
-strt();
+};
+strt()
 
 const sorte = (valor) => {
         const numSort = Math.floor(Math.random()*100)+1;
 
-        if (numSort <= 35) {return valor * 0}
-        if (numSort <= 60) {return valor}
-        if (numSort <= 80) {return valor * 1.5}
-        if (numSort <= 90) {return valor * 2}
-        if (numSort <= 95) {return valor * 3}
+        if (numSort <= 50) {return valor * 0}
+        if (numSort <= 70) {return valor}
+        if (numSort <= 85) {return valor * 1.5}
+        if (numSort <= 94) {return valor * 2}
+        if (numSort <= 98) {return valor * 3}
         if (numSort <= 99) {return valor * 4}
         return valor * 10
     };
@@ -53,8 +53,7 @@ function apostar() {
     }
 
     moneyTalks(valorFinal);
-
-    return
+    return 
 }
 
 const cleanBet = () => {divRes.innerHTML = ''};
