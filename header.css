@@ -1,32 +1,36 @@
 @charset "UTF-8";
 
 header {
+    width: 100vh;
     padding: 15px;
-    margin: auto;
+    margin: 10px;
     box-shadow: 0px 3px 5px black;
     border-radius: 5px;
 
-    display: flex;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
+
+    position: relative;
+
 }
 
 h1 {
     margin: auto;
-    right: auto;
-    left: auto;
+    position: absolute;
     text-align: center;
 }
 
 #divName {
-    left: auto;
-    right: 20px;
-    
     background-color: blue;
+
+    padding: 10px;
+    margin-left: 40%;
 }
 
 #money {
-    right: auto;
-    left: 20px;
-
     background-color: goldenrod;
+
+    padding: 10px;
+    margin-right: 40%;
 }

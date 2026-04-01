@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El tigrito</title>
+
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="shortcut icon" href="img/WhatsApp Image 2026-02-26 at 21.18.23.jpeg" type="image/x-">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo a El-Tigrito!!</h1>
+    </header>
+
+    <div id="divLogin" class="divLogin">
+        <p><strong>Faça login abaixo:</strong></p>
+
+        <input class="nameInput" type="text" placeholder="Nome de usuario">
+        <br>
+
+        <input id="passwordInput" type="text" placeholder="Senha">
+        <br>
+
+        <button id="loginBtn" class="btn" onmouseenter="style.background='darkblue'" onmouseleave="style.background='blue'" onclick="'green'">Login / SignUp</button>
+    </div>
+
+    <div class="admin" style="display: none;">
+        <p>Opções de admnistrador</p>
+        <button id="localStorageResetBtn" class="btn" onmouseenter="style.background='darkred'" onmouseleave="style.background='red'" onclick="style.background='pink'">Limpar armazenamento local
+        </button>
+
+        <button id="logAsAdminBtn" class="btn" onmouseenter="style.background='darkred'" onmouseleave="style.background='red'" onclick="style.background='pink'">Entrar com admnistrador</button>
+    </div>
+
+    <!-- <script type="module" src="script.js"></script> -->
+    <script type="module" src="profile.js"></script>
+    <script type="module" src="login.js"></script>
+
+    <!-- <script>
+        const button = document.querySelector('.btn');
+        button.addEventListener('click', () => {button.style.background = 'darkblue'; button.addEventListener('mouseleave', ()=>{button.style.background='blue'})});
+    </script> -->
+</body>
+</html>

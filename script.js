@@ -1,14 +1,14 @@
-import { userProfile , divMoney, moneyTalks} from "./profile.js";
+import { profile , divMoney, moneyTalks} from "./profile.js";
 
 const apostarBtn = document.querySelector('#apostarBtn');
 apostarBtn.addEventListener('click', apostar);
 
 const inputBet = document.querySelector('#apostarInput');
-const divBet = document.querySelector('#divApostando');
+export const divBet = document.querySelector('#divApostando');
 const divRes = document.querySelector('#divRes');
-
+ 
 function strt () {
-    return divMoney.innerText = 'Saldo: T$ ' + userProfile.money.toFixed(2);
+    return divMoney.innerText = 'Saldo: T$ ' + profile.money.toFixed(2);
 };
 strt()
 
@@ -31,11 +31,11 @@ function apostar() {
     if (isNaN(floatBet) || floatBet < 1) {
         return divRes.innerHTML = `Por favor, insira um número valido.`;
     }
-    if (floatBet > userProfile.money) {
+    if (floatBet > profile.money) {
         return divRes.innerText = 'Saldo insuficiente.';
     }
     
-    userProfile.money -= floatBet;
+    profile.money -= floatBet;
 
     const valorFinal = sorte(floatBet);
     const fixedValue = valorFinal.toFixed(2);

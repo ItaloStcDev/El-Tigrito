@@ -1,14 +1,25 @@
 @charset "UTF-8";
 
-.defaultStyle {
-    display: flex;
+.divPg1 {
+    display: block;
     justify-content: center;
+    align-items: center;
 }
 .common {
     background-color: blue;
     color: white;
+    outline-color: transparent;
     font-size: medium;
     font-weight: 550;
     padding: 1%;
     border-radius: 5px;
+}
+
+input.common {
+    margin-bottom: 10px;
+    margin-left: 35%;
+}
+
+input.common::placeholder {
+    color: white;
 }

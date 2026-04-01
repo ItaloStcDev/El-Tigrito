@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+div {
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px;
+    width: 350px;
+    height: 200px;
+
+    button, p {
+        width: 90%;
+        margin: 5%;
+    }
+    input {
+        width: 88%;
+        margin: 3px 5%;
+    }
+    input::placeholder {
+        font-weight: bold;
+    }
+}
+
+.admin {
+    .btn {
+        background-color: red;
+    }
+}

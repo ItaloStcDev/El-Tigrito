@@ -1,19 +1,28 @@
-const localUser = JSON.parse(localStorage.getItem('userData'));
+const localUser = JSON.parse(localStorage.getItem('user'));
+const userName = localStorage.getItem('userName');
 
-const divName = document.querySelector("#divName");
 export const divMoney = document.querySelector('#money');
+const divName = document.querySelector('#divName');
 
-export const userProfile = {
-    name: localUser?localUser.name:'user',
-    money: localUser?localUser.money:100,
-    id: localUser?localUser.id:0,
+export const profile = {
+    name: userName ? userName : 'test',
+    money: localUser ? localUser.money : 100,
+    id: 0,
 }
+
+if (userName == 'admin') {
+    profile.money
+}
+
+localStorage.setItem('user', JSON.stringify(profile));
+
+divName.innerText = profile.name;
 
 export function moneyTalks(val) {
-    userProfile.money += val;
-    localStorage.setItem('userData', JSON.stringify(userProfile));
-    divMoney.innerText = 'Saldo: T$ ' + userProfile.money.toFixed(2);
+    profile.money += val;
+
+    localStorage.setItem('user', JSON.stringify(profile));
+
+    divMoney.innerText = 'Saldo: T$ ' + profile.money.toFixed(2);
     return
 }
-
-divName.innerText = userProfile.name;
